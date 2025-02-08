@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-color: hsl(187, 24%, 22%) hsl(186, 15%, 59%);
+    scroll-behavior: smooth;
+    scrollbar-width: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(223, 241, 231);
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.alert-message {
+    width: 30%;
+    height: auto;
+    padding: 7px 20px;
+    border: 2px solid hsl(186, 15%, 59%);
+    margin: 4px auto;
+    background-color: hsl(187, 24%, 22%);
+    color: #fff;
+    border-radius: 20px;
+    display: none;
+}
+
+.container {
+    /* border: 2px solid red; */
+    max-width: 100%;
+    min-width: 90%;
+    max-height: 100vh;
+    min-height: 90vh;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.container .form-container {
+    width: 50%;
+    height: 680px;
+    /* border: 2px solid sienna; */
+    background-color: white;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .form-container .title-text {
+    /* border: 2px solid fuchsia; */
+    width: 100%;
+    height: 44px;
+}
+
+.container .form-container .title-text h3 {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.container .form-container .name-fields {
+    width: 98%;
+    /* border: 2px solid fuchsia; */
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container .form-container .name-fields label {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.container .form-container .name-fields input {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid hsl(186, 15%, 59%);
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 5px;
+}
+
+.container .form-container .name-fields .first-name {
+    /* border: 2px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+ }
+
+.container .form-container .name-fields .last-name {
+    /* border: 2px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .form-container .email-field {
+    width: 98%;
+    /* border: 2px solid fuchsia; */
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+}
+
+.container .form-container .email-field label {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.container .form-container .email-field input {
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid hsl(186, 15%, 59%);
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 2px;
+}
+
+input:focus {
+    border: 1px solid hsl(187, 24%, 22%) !important;
+}
+
+.container .form-container .error-message {
+    font-size: 10px;
+    margin-left: 17px;
+    margin-top: 3px;
+    color: red;
+    /* display: none; */
+}
+
+.container .form-container .query-fields {
+    width: 98%;
+    /* border: 2px solid fuchsia; */
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+}
+
+.container .form-container .query-fields h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.container .form-container .query-fields .radio-fields {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    height: 50%;
+}
+
+.container .form-container .query-fields .general-enquiry {
+    border: 1px solid hsl(186, 15%, 59%);
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.container .form-container .query-fields .support-request {
+    border: 1px solid hsl(186, 15%, 59%);
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.container .form-container .query-fields .radio-fields label {
+    margin-left: 10px;
+    word-break: break-all;
+}
+
+.container .form-container .message-field {
+    width: 98%;
+    margin: 0 auto;
+    /* border: 1px solid salmon; */
+    height: 190px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .form-container .message-field label {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.container .form-container .message-field textarea {
+    border: 1px solid hsl(186, 15%, 59%);
+    font-size: 16px;
+    margin-left: 6px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.container .form-container .terms-conditions {
+    width: 98%;
+    /* border: 2px solid fuchsia; */
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+}
+
+.container .form-container .terms-conditions label, input {
+    margin-left: 12px;
+}
+
+.container .form-container button {
+    width: 96%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: hsl(169, 82%, 27%);
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: 1s all;
+    margin-top: 9px;
+}
+
+.container .form-container button:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 8px hsl(186, 15%, 59%);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 570px) {
+
+
+    .container {
+        max-width: 100%;
+        min-width: 90%;
+        max-height: 100vh;
+        min-height: 90vh;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+    }
+
+    .container .form-container {
+        width: 77%;
+        height: 730px;
+        gap: 6px;
+    }
+
+    .container .form-container .name-fields {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+    }
+
+    .container .form-container .name-fields input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container .form-container .name-fields .first-name {
+        width: 100%;
+     }
+    
+    .container .form-container .name-fields .last-name {
+        width: 100%;
+    }
+
+    .container .form-container .query-fields {
+        width: 100%;
+        /* border: 2px solid fuchsia; */
+        height: 140px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .container .form-container .query-fields .radio-fields {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 7px;
+        height: 80%;
+        /* border: 2px solid khaki; */
+        width: 100%;
+    }
+
+    .container .form-container .query-fields .general-enquiry {
+        border: 1px solid hsl(186, 15%, 59%);
+        width: 100%;
+        display: flex;
+    }
+    
+    .container .form-container .query-fields .support-request {
+        border: 1px solid hsl(186, 15%, 59%);
+        width: 100%;
+        display: flex;
+    }
+
+    .container .form-container .message-field textarea {
+        margin-top: 2px;
+        margin-left: 0;
+    }
+
+    .container .form-container .terms-conditions {
+        width: 100%;
+        /* border: 2px solid fuchsia; */
+        height: 40px;
+        margin: 0 auto;
+        display: flex;
+        /* justify-content: flex-start; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 8px; */
+        /* padding: 10px; */
+    }
+    
+
+    .container .form-container .terms-conditions input {
+        width: auto;
+        margin-left: 1px;
+        /* border: 2px solid fuchsia; */
+        /* height: 40px; */
+        /* margin: 0 auto; */
+        /* display: flex; */
+        /* justify-content: flex-start; */
+        /* align-items: center; */
+        /* gap: 8px; */
+        /* padding: 10px; */
+    }
+    
+    .container .form-container .terms-conditions label {
+        width: auto;
+        margin-left: 1px;
+        /* border: 2px solid fuchsia; */
+        padding: 3px;
+    }
+    
+    
+
+    .container .form-container button {
+        width: 96%;
+        /* margin: 0 auto; */
+        /* padding: 5px; */
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        background-color: hsl(169, 82%, 27%);
+        font-size: 14px;
+        color: #fff;
+        letter-spacing: 1px;
+        transition: 1s all;
+        margin-top: 2px;
+        margin-bottom: 3px;
+    }
+}

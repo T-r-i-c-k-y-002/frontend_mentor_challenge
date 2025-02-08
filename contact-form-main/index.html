@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+
+<body>
+  <div class="alert-message">
+    <h4>✅Message Sent!</h4><br>
+    <span style="text-align: justify;">Thanks for completing the form. We'll be in touch soon!</span>
+  </div>
+  <div class="container">
+    <div class="form-container">
+      <div class="title-text">
+        <h3>Contact Us</h3>
+      </div>
+      <div class="name-fields">
+        <div class="first-name">
+          <label for="first-name">First Name*</label>
+          <input type="text" name="first-name" id="firstName">
+          <div class="error-message"></div>
+        </div>
+        <div class="last-name">
+          <label for="last-name">Last Name*</label>
+          <input type="text" name="last-name" id="lastName">
+          <div class="error-message"></div>
+        </div>
+      </div>
+      <div class="email-field">
+        <label for="email">Email Address*</label>
+        <input type="text" name="email" id="email">
+        <div class="error-message"></div>
+      </div>
+      <div class="query-fields">
+        <h4>Query Type *</h4>
+        <div class="radio-fields">
+          <div class="general-enquiry">
+            <input type="radio" name="" id="first-checked">
+            <img src="./assets/images/icon-radio-selected.svg" alt="" id="firstChecked"
+              style="display: none;width: 15px;">
+            <label for="generalEnquiry">General Enquiry</label>
+          </div>
+          <div class="support-request">
+            <input type="radio" name="" id="second-checked">
+            <img src="./assets/images/icon-radio-selected.svg" alt="" id="secondChecked"
+              style="display: none;width: 15px;">
+            <label for="supportRequest">Support Request</label>
+          </div>
+        </div>
+        <div class="error-message"></div>
+      </div>
+      <div class="message-field">
+        <label for="message">Message*</label>
+        <textarea cols="10" rows="6" draggable="false" id="messageField"></textarea>
+        <div class="error-message"></div>
+      </div>
+      <div class="terms-conditions">
+        <input type="checkbox" id="terms-conditions">
+        <label for="terms-conditions">I consent to being contacted by the team. *</label>
+      </div>
+      <button type="submit">Submit</button>
+    </div>
+  </div>
+
+
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

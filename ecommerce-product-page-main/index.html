@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+
+</head>
+<body>
+
+    <div class="container">
+      <div class="nav">
+        <div class="hambugermenu" id="open-nav">
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+        </div>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="sidenavbar" style="z-index: 2;">
+          <i class="fa-solid fa-minus" id="close-nav"></i>
+          <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-profile-cart">
+          <img src="./images/icon-cart.svg" alt="cart" id="add-cart-logo">
+          <img src="./images/image-avatar.png" alt="profile">
+        </div>
+        <div class="cart-items">
+          <h2>cart</h2>
+          <div class="cart-content">
+            <h4 id="show-no-items">your cart is empty</h4>
+            <div class="has-items">
+              <img src="./images/image-product-1.jpg" alt="shoe" width="40" height="40" style="border-radius: 10px; object-fit: cover;">
+              <p class="details">
+                Fall Limited Edition Sneakers $125.00 × <span id="count" style="margin-right: 5px;">1</span> $<span id="price" style="font-size: 16px;"><b>125</b></span>
+              </p>
+              <div>
+                <i class="fa-solid fa-trash-can" onclick="deleteProduct()"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="image-container">
+          <div class="showcase-image">
+            <img src="./images/icon-previous.svg" alt="previous" class="slider left">
+            <img src="./images/image-product-1.jpg" alt="product-1" style="width: 380px; height: 370px; border-radius: 20px;" id="main-image">
+            <img src="./images/icon-next.svg" alt="next" class="slider right">
+          </div>
+          <div class="choose-images">
+            <img src="./images/image-product-1.jpg" alt="product1" style="width: 80px; height: 70px; border-radius: 20px;" id="product-1-choose" class="choose-image">
+            <img src="./images/image-product-2.jpg" alt="product2" style="width: 80px; height: 70px; border-radius: 20px;" id="product-2-choose" class="choose-image">
+            <img src="./images/image-product-3.jpg" alt="product3" style="width: 80px; height: 70px; border-radius: 20px;" id="product-3-choose" class="choose-image">
+            <img src="./images/image-product-4.jpg" alt="product4" style="width: 80px; height: 70px; border-radius: 20px;" id="product-4-choose" class="choose-image">
+          </div>
+        </div>
+        <div class="image-details">
+          <h3>sneakers company</h3>
+          <h1>Fall Limited Edition <br> Sneakers</h1>
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <div class="price-wrapper">
+            <div class="price">
+              <h3>$125.00</h3>
+              <span><b>50%</b></span>
+            </div>
+            <h4 style="color: hsl(220, 14%, 75%); text-decoration: line-through;font-size: 1.1rem;font-weight: lighter;">$250.00</h4>
+          </div>
+          <div class="counter-actions">
+            <div class="item-counter">
+              <i class="fa-solid fa-minus" id="decrement"></i>
+              <span class="set-product-count">0</span>
+              <i class="fa-solid fa-plus" id="increment"></i>
+            </div>
+            <button id="addProduct">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <h4>Add To Cart</h4>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>  
+  
+
+
+
+
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
